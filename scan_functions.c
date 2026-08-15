@@ -104,6 +104,26 @@ status is_numeric_constant(unsigned int ch,Token *token)
         return FAILURE;
 }
 
+status is_character(char ch,Token *token)
+{
+    int i=0;
+    if(ch==39)
+    {
+        token->tok[i++]=ch;
+        while( (ch=fgetc(token->input_fp)) != 39)
+        {
+            token->tok[i++]=ch;
+        }
+        token->tok[i++]=ch;
+        token->tok[i]='\0';
+        
+        printf("%-10d %-15s : CHARACTER CONSTANT\n",token->line,token->tok);
+        fprintf(token->output_fp,"%-10d %-15s : CHARACTER CONSTANT\n",token->line,token->tok);
+        return SUCCESS;
+    }
+    return FAILURE;
+}
+
 status is_string_literal(unsigned int ch,Token *token)
 {
     if(ch == '"')

@@ -53,6 +53,7 @@ status is_operator(char ch,Token *token);
 status is_compound_operator(char ch,Token *token);
 status is_symbol(char ch,Token *token);
 status is_numeric_constant(unsigned int ch,Token *token);
+status is_character(char ch,Token *token);
 status is_string_literal(unsigned int ch,Token *token);
 
 

@@ -138,6 +138,10 @@ status scan(Token *token)
         {
             continue;
         }
+        else if( is_character(ch,token) )
+        {
+            continue;
+        }
         else if( is_string_literal(ch,token) )
         {
             continue;

@@ -1,101 +1,33 @@
 ---------------------------------------------
 Line No    Token           Token Type
 ---------------------------------------------
-1          #include        : PRE-PROCESSOR
-1          "header.h"      : HEADER
+1          #define         : PRE-PROCESSOR
+1          int             : MACRO
+1          char            : MACRO VALUE
+1          ;               : TERMINATING OPERATOR
 2          #include        : PRE-PROCESSOR
-2          <stdio.h>       : HEADER
+2          "header.h"      : HEADER
 3          int             : RESERVED KEYWORD
-3          sum             : IDENTIFIER
+3          main            : IDENTIFIER
 3          (               : OPEN_BRACE
-3          int             : RESERVED KEYWORD
-3          num1            : IDENTIFIER
-3          ,               : OPERATOR
-3          int             : RESERVED KEYWORD
-3          num2            : IDENTIFIER
 3          )               : CLOSE_BRACE
-3          ;               : TERMINATING OPERATOR
-4          COMMENT: //lokeswar reddy
-5          int             : RESERVED KEYWORD
-5          main            : IDENTIFIER
-5          (               : OPEN_BRACE
-5          )               : CLOSE_BRACE
-6          {               : OPEN_BRACE
-7          #ifdef          : PRE-PROCESSOR
-7          1               : NUMERIC CONSTANT
-8          int             : RESERVED KEYWORD
-8          num1            : IDENTIFIER
-8          =               : OPERATOR
+4          {               : OPEN_BRACE
+5          char            : RESERVED KEYWORD
+5          num             : IDENTIFIER
+5          ;               : TERMINATING OPERATOR
+6          num             : IDENTIFIER
+6          =               : OPERATOR
+6          'A'             : CHARACTER CONSTANT
+6          ;               : TERMINATING OPERATOR
+7          printf          : IDENTIFIER
+7          (               : OPEN_BRACE
+7          "%d\n"          : STRING LITERAL
+7          ,               : OPERATOR
+7          num             : IDENTIFIER
+7          )               : CLOSE_BRACE
+7          ;               : TERMINATING OPERATOR
+8          return          : NON RESERVED KEYWORD
 8          0               : NUMERIC CONSTANT
-8          ,               : OPERATOR
-8          num2            : IDENTIFIER
-8          =               : OPERATOR
-8          2               : NUMERIC CONSTANT
-8          +               : OPERATOR
-8          6               : NUMERIC CONSTANT
 8          ;               : TERMINATING OPERATOR
-8          COMMENT: /*addition*/
-9          #endif          : PRE-PROCESSOR
-10         COMMENT: /*I am
-     Loki*/
-11         char            : RESERVED KEYWORD
-11         name            : IDENTIFIER
-11         [               : OPEN_BRACE
-11         5               : NUMERIC CONSTANT
-11         ]               : CLOSE_BRACE
-11         =               : OPERATOR
-11         "loki"          : STRING LITERAL
-11         ;               : TERMINATING OPERATOR
-12         if              : NON RESERVED KEYWORD
-12         (               : OPEN_BRACE
-12         num1            : IDENTIFIER
-12         ==              : COMPOUND OPERATOR
-12         0               : NUMERIC CONSTANT
-12         )               : CLOSE_BRACE
-13         printf          : IDENTIFIER
-13         (               : OPEN_BRACE
-13         "Result: %d"    : STRING LITERAL
-13         ,               : OPERATOR
-13         num2            : IDENTIFIER
-13         )               : CLOSE_BRACE
-13         ;               : TERMINATING OPERATOR
-14         else            : NON RESERVED KEYWORD
-15         {               : OPEN_BRACE
-16         printf          : IDENTIFIER
-16         (               : OPEN_BRACE
-16         "Result: %d"    : STRING LITERAL
-16         ,               : OPERATOR
-16         sum             : IDENTIFIER
-16         (               : OPEN_BRACE
-16         num1            : IDENTIFIER
-16         ,               : OPERATOR
-16         num2            : IDENTIFIER
-16         )               : CLOSE_BRACE
-16         )               : CLOSE_BRACE
-16         ;               : TERMINATING OPERATOR
-17         }               : CLOSE_BRACE
-18         return          : NON RESERVED KEYWORD
-18         0               : NUMERIC CONSTANT
-18         ;               : TERMINATING OPERATOR
-19         }               : CLOSE_BRACE
-20         int             : RESERVED KEYWORD
-20         sum             : IDENTIFIER
-20         (               : OPEN_BRACE
-20         int             : RESERVED KEYWORD
-20         num1            : IDENTIFIER
-20         ,               : OPERATOR
-20         int             : RESERVED KEYWORD
-20         num2            : IDENTIFIER
-20         )               : CLOSE_BRACE
-21         {               : OPEN_BRACE
-22         num1            : IDENTIFIER
-22         <<              : COMPOUND OPERATOR
-22         5               : NUMERIC CONSTANT
-22         ;               : TERMINATING OPERATOR
-23         return          : NON RESERVED KEYWORD
-23         num1            : IDENTIFIER
-23         +               : OPERATOR
-23         num2            : IDENTIFIER
-23         ;               : TERMINATING OPERATOR
-24         }               : CLOSE_BRACE
+9          }               : CLOSE_BRACE
 ---------------------------------------------

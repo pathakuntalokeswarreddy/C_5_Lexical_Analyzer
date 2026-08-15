@@ -2,8 +2,8 @@
 #include"header.h"
 int main()
 {
-    int num;
-    num = 15;
+    char num;
+    num = 'A';
     printf("%d\n",num);
     return 0;
 }
